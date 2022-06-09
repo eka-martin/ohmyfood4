@@ -37,27 +37,9 @@
 
 .resto_img {
 
-    &:nth-of-type(1) {
-        background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-    }
-
-    &:nth-of-type(2) {
-        background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-
-    }
-
-    &:nth-of-type(3) {
-        background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-    }
-
-    &:nth-of-type(4) {
-        background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-
-    }
-
     width: 100%;
-    height: 180px;
-    background-size: cover;
+    height: calc(70% - 10px);
+    object-fit: cover;
     border-radius: 15px 15px 0 0;
     position: relative;
 }
