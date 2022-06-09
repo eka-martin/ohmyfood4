@@ -1,0 +1,61 @@
+.fonc {
+    @include flexCenter(column);
+    margin-top: 20px;
+    margin-bottom: 40px;
+
+    .etape {
+        display: inline-flex;
+        background-color: $greyLight;
+        border-radius: 25px;
+        padding: 25px;
+        width: 350px;
+        box-shadow: $shadow;
+        margin-bottom: 25px;
+
+        a {
+            display: inline-flex;
+        }
+
+        .badge {
+            display: flex;
+            height: 25px;
+            width: 25px;
+            align-items: center;
+            justify-items: center;
+            background-color: $primColor;
+            padding: 7px;
+            border-radius: 30px;
+            color: white;
+            margin-left: -38px;
+        }
+
+        i {
+            color: $greyDark;
+            padding-left: 32px;
+            padding-right: 32px;
+            font-size: 24px;
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: $primColor;
+
+            }
+        }
+
+        span {
+            @include flexCenter(row);
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: lighten($primColor, 35%);
+
+        }
+
+        &:hover i {
+            color: $primColor;
+        }
+    }
+}

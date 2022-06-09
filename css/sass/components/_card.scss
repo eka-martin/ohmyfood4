@@ -1,0 +1,75 @@
+.resto_card {
+    background-color: white;
+    border-radius: 15px;
+    text-align: left;
+    height: 260px;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: $shadow;
+    width: 100%;
+    position: relative;
+
+    a {
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    p {
+        font-weight: 200;
+        font-size: 16px;
+        padding-top: 5px;
+
+    }
+
+    .green_button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: $tertColor;
+        padding: 6px 10px;
+        color: darken($tertColor, 40%);
+        margin: 0;
+        font-size: 14px;
+        border-radius: 2px;
+    }
+}
+
+.resto_img {
+
+    &:nth-of-type(1) {
+        background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    }
+
+    &:nth-of-type(2) {
+        background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+
+    }
+
+    &:nth-of-type(3) {
+        background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    }
+
+    &:nth-of-type(4) {
+        background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+
+    }
+
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+.card_body {
+    display: flex;
+    justify-content: space-between;
+    margin: 17px 20px;
+}
+
+.heart {
+    display: flex;
+    align-items: center;
+
+}

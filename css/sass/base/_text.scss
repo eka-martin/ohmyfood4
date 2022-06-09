@@ -1,0 +1,28 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+li {
+    list-style: none;
+}
+
+@mixin title() {
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+// $font-size: (
+//     title:24px,
+//     text:16px,
+//     text-card:13px
+// );
+
+@mixin big_title() {
+    font-family: Shrikhand;
+    font-size: 30px;
+    font-weight: 900;
+
+
+}

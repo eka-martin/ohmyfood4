@@ -1,0 +1,471 @@
+.fa-heart:hover,
+.fa-heart:focus,
+.fa-heart:active {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  background-clip: text;
+  font-weight: 900;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#wrapper {
+  width: 400px;
+  margin: auto;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.resto_card {
+  background-color: white;
+  border-radius: 15px;
+  text-align: left;
+  height: 260px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.2), 0 2px 10px 0 rgba(50, 50, 50, 0.2);
+          box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.2), 0 2px 10px 0 rgba(50, 50, 50, 0.2);
+  width: 100%;
+  position: relative;
+}
+
+.resto_card a {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.resto_card p {
+  font-weight: 200;
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+.resto_card .green_button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #99E2D0;
+  padding: 6px 10px;
+  color: #278870;
+  margin: 0;
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+.resto_img {
+  width: 100%;
+  height: 180px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+}
+
+.resto_img:nth-of-type(1) {
+  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+
+.resto_img:nth-of-type(2) {
+  background-image: url("../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+
+.resto_img:nth-of-type(3) {
+  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.resto_img:nth-of-type(4) {
+  background-image: url("../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+}
+
+.card_body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 17px 20px;
+}
+
+.heart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fonc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.fonc .etape {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  padding: 25px;
+  width: 350px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.2), 0 2px 10px 0 rgba(50, 50, 50, 0.2);
+          box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.2), 0 2px 10px 0 rgba(50, 50, 50, 0.2);
+  margin-bottom: 25px;
+}
+
+.fonc .etape a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.fonc .etape .badge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 25px;
+  width: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  background-color: #9356DC;
+  padding: 7px;
+  border-radius: 30px;
+  color: white;
+  margin-left: -38px;
+}
+
+.fonc .etape i {
+  color: #7e7e7e;
+  padding-left: 32px;
+  padding-right: 32px;
+  font-size: 24px;
+}
+
+.fonc .etape i:hover, .fonc .etape i:active, .fonc .etape i:focus {
+  color: #9356DC;
+}
+
+.fonc .etape span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.fonc .etape:hover, .fonc .etape:active, .fonc .etape:focus {
+  background-color: #f2eafb;
+}
+
+.fonc .etape:hover i {
+  color: #9356DC;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .logo {
+  width: 180px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .logo img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.location {
+  background-color: #eaeaea;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-shadow: 0px 4px 3px #d4d4d4 inset;
+          box-shadow: 0px 4px 3px #d4d4d4 inset;
+  padding: 15px;
+}
+
+.location i {
+  padding-right: 20px;
+}
+
+.search {
+  background-color: #f6f6f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 300px;
+  padding: 60px;
+  margin-bottom: 40px;
+}
+
+.search .heading {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.search span:nth-of-type(2) {
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.btn-pink {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background-image: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  color: white;
+  padding: 15px 20px 15px 20px;
+  border-radius: 36px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.2), 0 2px 10px 0 rgba(50, 50, 50, 0.2);
+          box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.2), 0 2px 10px 0 rgba(50, 50, 50, 0.2);
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header a {
+  margin-right: -25px;
+}
+
+header .logo {
+  width: 180px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .logo img {
+  max-height: 100%;
+  max-width: 100%;
+  margin-left: 100px;
+}
+
+.top {
+  width: 100%;
+  background-size: cover;
+  height: 250px;
+  background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+
+.resto {
+  background-color: #f6f6f6;
+  height: 1260px;
+  padding: 40px 15px 40px 15px;
+}
+
+.resto .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.menu {
+  height: 2000px;
+  border-radius: 35px 35px 0px 0px;
+  margin-top: -35px;
+  background-color: #f6f6f6;
+}
+
+.menu .big_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 35px 25px;
+}
+
+.menu .big_title span {
+  font-family: Shrikhand;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.foot {
+  background-color: #353535;
+  color: white;
+  padding-bottom: 15px;
+}
+
+.foot a {
+  color: white;
+}
+
+.foot li {
+  padding: 4px;
+}
+
+.foot i {
+  padding-right: 10px;
+}
+
+.foot .foot-logo {
+  width: 120px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.foot .foot-logo img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.foot .logo-footer {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.foot .footer-text {
+  margin-left: 20px;
+}
+/*# sourceMappingURL=style.css.map */

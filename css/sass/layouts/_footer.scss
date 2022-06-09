@@ -1,0 +1,41 @@
+.foot {
+    background-color: $greyDarkFoot;
+    color: rgb(255, 255, 255);
+    padding-bottom: 15px;
+
+    a {
+        color: rgb(255, 255, 255);
+    }
+
+    li {
+        padding: 4px;
+    }
+
+    i {
+        padding-right: 10px;
+    }
+
+    .foot-logo {
+        width: 120px;
+        height: 70px;
+        @include flexCenter(column);
+        margin-left: 20px;
+        margin-right: 20px;
+
+        img {
+            max-height: 100%;
+            max-width: 100%;
+
+        }
+    }
+
+    .logo-footer {
+
+        filter: invert(1);
+    }
+
+    .footer-text {
+        margin-left: 20px;
+
+    }
+}

@@ -1,0 +1,30 @@
+header {
+    @include flexCenter(row);
+
+    a {
+        margin-right: -25px;
+    }
+
+    .logo {
+        width: 180px;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        img {
+            max-height: 100%;
+            max-width: 100%;
+            margin-left: 100px;
+
+        }
+
+    }
+}
+
+.top {
+    width: 100%;
+    background-size: cover;
+    height: 250px;
+    background-image: url("../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}

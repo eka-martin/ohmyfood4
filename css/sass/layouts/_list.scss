@@ -1,0 +1,15 @@
+.resto {
+    background-color: $greyLight;
+    height: 1260px;
+    padding: 40px 15px 40px 15px;
+
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+
+}

@@ -1,0 +1,10 @@
+.fa-heart:hover,
+.fa-heart:focus,
+.fa-heart:active {
+    transition: all .5s ease-in-out;
+    background-clip: text;
+    font-weight: 900;
+    background-image: $gradient;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
