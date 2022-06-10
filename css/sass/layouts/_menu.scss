@@ -1,18 +1,66 @@
 .menu {
-    height: 2000px;
+    display: flex;
+    flex-direction: column;
+    height: 1200px;
     border-radius: 35px 35px 0px 0px;
     margin-top: -35px;
+    padding: 0px 20px;
     background-color: $greyLight;
+
+    .part {
+        margin-bottom: 30px;
+    }
+
+    i {
+        padding-right: 10px;
+    }
 
     .big_title {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 35px 25px;
+        padding: 25px 0px;
 
         span {
             @include big_title();
         }
     }
 
+    .bottom {
+        @include flexCenter(column);
+    }
+}
+
+.btn-pink {
+    @include btn-pink();
+
+}
+
+.heading_menu {
+    border-bottom: solid 3px $tertColor;
+    @include heading_2();
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    width: 40px;
+}
+
+.plat {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: white;
+    padding: 15px;
+    margin: 0px -5px 15px -5px;
+    border-radius: 15px;
+    box-shadow: $shadow;
+
+    p {
+        font-size: 14px;
+        font-weight: 200;
+        padding-top: 5px;
+    }
+
+    .price {
+        padding-right: 10px;
+    }
 }

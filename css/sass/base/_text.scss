@@ -13,16 +13,19 @@ li {
     font-weight: 700;
 }
 
-// $font-size: (
-//     title:24px,
-//     text:16px,
-//     text-card:13px
-// );
+@mixin text-base($font-weight) {
+    font-size: 16px;
+    font-weight: $font-weight;
+}
 
 @mixin big_title() {
     font-family: Shrikhand;
     font-size: 30px;
     font-weight: 900;
+}
 
+@mixin heading_2() {
+    font-size: 16px;
+    font-weight: 300;
 
 }
