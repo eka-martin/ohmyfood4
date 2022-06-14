@@ -54,6 +54,7 @@ li {
           box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.2), 0 2px 10px 0 rgba(50, 50, 50, 0.2);
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 .resto_card .green_button {
@@ -471,6 +472,16 @@ header .logo img {
           box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.2), 0 2px 10px 0 rgba(50, 50, 50, 0.2);
 }
 
+.plat:hover > i {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+
+.plat:hover > .box {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
 .plat p {
   font-size: 14px;
   font-weight: 200;
@@ -479,6 +490,53 @@ header .logo img {
 
 .plat .price {
   padding-right: 10px;
+}
+
+.plat i {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: -webkit-transform 1500ms;
+  transition: -webkit-transform 1500ms;
+  transition: transform 1500ms;
+  transition: transform 1500ms, -webkit-transform 1500ms;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+.plat .box {
+  background-color: #99E2D0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 50px;
+  height: 71px;
+  margin-top: -15px;
+  margin-bottom: -15px;
+  margin-right: -15px;
+  border-radius: 0px 15px 15px 0px;
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 500ms;
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
 }
 
 .foot {
