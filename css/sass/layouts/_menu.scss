@@ -53,20 +53,7 @@
     margin: 0px -5px 15px -5px;
     border-radius: 15px;
     box-shadow: $shadow;
-
-    &:hover {
-
-        &>i {
-
-            transform: rotate(-360deg);
-        }
-
-        &>.box {
-
-            transform: scaleX(1);
-        }
-
-    }
+    overflow: hidden;
 
 
     p {
@@ -80,9 +67,12 @@
     }
 
     i {
+
         color: white;
-        @include flexCenter(column);
-        transition: transform 1500ms;
+        margin: auto;
+        padding-right: 0px;
+        font-size: 20px;
+        transition: transform 600ms;
         transform: rotate(0);
     }
 
@@ -90,11 +80,11 @@
         background-color: $tertColor;
         display: flex;
         justify-content: flex-end;
-        width: 50px;
+        width: 70px;
         height: 71px;
         margin-top: -15px;
         margin-bottom: -15px;
-        margin-right: -15px;
+        margin-right: -17px;
         border-radius: 0px 15px 15px 0px;
         transform-origin: right;
         transform: scaleX(0);
