@@ -1,13 +1,60 @@
 .fa-heart:hover,
 .fa-heart:focus,
 .fa-heart:active {
-    transition: all .5s ease-in-out;
-    background-clip: text;
+    -webkit-background-clip: text;
     font-weight: 900;
     background-image: $gradient;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
+    animation: 2s ease 0s infinite normal none running fontgradient;
+    -webkit-animation: fontgradient 2s ease infinite;
+    -moz-animation: fontgradient 2s ease infinite;
+    animation: fontgradient 2s ease infinite;
 }
+
+@-webkit-keyframes fontgradient {
+    0% {
+        background-position: 0% 92%
+    }
+
+    50% {
+        background-position: 100% 9%
+    }
+
+    100% {
+        background-position: 0% 92%
+    }
+}
+
+@-moz-keyframes fontgradient {
+    0% {
+        background-position: 0% 92%
+    }
+
+    50% {
+        background-position: 100% 9%
+    }
+
+    100% {
+        background-position: 0% 92%
+    }
+}
+
+@keyframes fontgradient {
+    0% {
+        background-position: 0% 92%
+    }
+
+    50% {
+        background-position: 100% 9%
+    }
+
+    100% {
+        background-position: 0% 92%
+    }
+}
+
+
 
 .plat:hover {
 
@@ -34,16 +81,6 @@
     }
 }
 
-@-webkit-keyframes fadeInUp {
-    from {
-        transform: translate3d(0, 40px, 0)
-    }
-
-    to {
-        transform: translate3d(0, 0, 0);
-        opacity: 1
-    }
-}
 
 .animated {
     animation-duration: 1s;
