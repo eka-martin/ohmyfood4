@@ -35,27 +35,27 @@
             padding-right: 32px;
             font-size: 24px;
 
-            &:hover,
-            &:active,
-            &:focus {
-                color: $primColor;
+            // &:hover,
+            // &:active,
+            // &:focus {
+            //     color: $primColor;
 
-            }
+            // }
         }
 
         span {
             @include flexCenter(row);
         }
 
-        &:hover,
-        &:active,
-        &:focus {
-            background-color: lighten($primColor, 35%);
+        // &:hover,
+        // &:active,
+        // &:focus {
+        //     background-color: lighten($primColor, 35%);
 
-        }
+        // }
 
-        &:hover i {
-            color: $primColor;
-        }
+        // &:hover i {
+        //     color: $primColor;
+        // }
     }
 }

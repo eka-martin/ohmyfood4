@@ -1,8 +1,8 @@
 .fa-heart:hover,
 .fa-heart:focus,
 .fa-heart:active {
-    -webkit-background-clip: text;
     font-weight: 900;
+    -webkit-background-clip: text;
     background-image: $gradient;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
@@ -97,4 +97,20 @@
     opacity: 0;
     animation-name: fadeInUp;
     animation-name: fadeInUp;
+}
+
+.fonc .etape {
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: lighten($primColor, 35%);
+
+    }
+
+    &:hover i {
+        color: $primColor;
+    }
+
+
 }
