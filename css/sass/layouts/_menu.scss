@@ -55,17 +55,6 @@
     box-shadow: $shadow;
     overflow: hidden;
 
-
-    p {
-        font-size: 14px;
-        font-weight: 200;
-        padding-top: 5px;
-    }
-
-    .price {
-        padding-right: 10px;
-    }
-
     i {
 
         color: white;
@@ -91,4 +80,24 @@
         transition: transform 500ms;
 
     }
+}
+
+.food {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 325px;
+    flex-shrink: 0;
+
+    p {
+        font-size: 14px;
+        font-weight: 200;
+        padding-top: 5px;
+    }
+
+    .price {
+        padding-right: 10px;
+    }
+
+
 }

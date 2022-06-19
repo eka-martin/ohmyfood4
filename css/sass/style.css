@@ -36,6 +36,12 @@
   }
 }
 
+.plat:hover > .food {
+  width: 250px;
+  -webkit-transition: width 500ms;
+  transition: width 500ms;
+}
+
 .plat:hover > .box {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
@@ -550,16 +556,6 @@ header .logo img {
   overflow: hidden;
 }
 
-.plat p {
-  font-size: 14px;
-  font-weight: 200;
-  padding-top: 5px;
-}
-
-.plat .price {
-  padding-right: 10px;
-}
-
 .plat i {
   color: white;
   margin: auto;
@@ -595,6 +591,31 @@ header .logo img {
   transition: -webkit-transform 500ms;
   transition: transform 500ms;
   transition: transform 500ms, -webkit-transform 500ms;
+}
+
+.food {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 325px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.food p {
+  font-size: 14px;
+  font-weight: 200;
+  padding-top: 5px;
+}
+
+.food .price {
+  padding-right: 10px;
 }
 
 .foot {

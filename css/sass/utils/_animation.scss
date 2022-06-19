@@ -57,6 +57,10 @@
 
 
 .plat:hover {
+    &>.food {
+        width: 250px;
+        transition: width 500ms;
+    }
 
     &>.box {
 
@@ -66,6 +70,8 @@
 
             transform: rotate(360deg);
         }
+
+
     }
 
 }
