@@ -38,8 +38,8 @@
 
 .plat:hover > .food {
   width: 250px;
-  -webkit-transition: width 500ms;
-  transition: width 500ms;
+  -webkit-transition: width 600ms;
+  transition: width 600ms;
 }
 
 .plat:hover > .box {
@@ -587,10 +587,10 @@ header .logo img {
           transform-origin: right;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transition: -webkit-transform 500ms;
-  transition: -webkit-transform 500ms;
-  transition: transform 500ms;
-  transition: transform 500ms, -webkit-transform 500ms;
+  -webkit-transition: -webkit-transform 600ms;
+  transition: -webkit-transform 600ms;
+  transition: transform 600ms;
+  transition: transform 600ms, -webkit-transform 600ms;
 }
 
 .food {
