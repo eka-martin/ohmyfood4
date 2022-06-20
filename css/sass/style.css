@@ -42,6 +42,13 @@
   transition: width 600ms;
 }
 
+.plat:hover > .food > .food_1 p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
 .plat:hover > .box {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);

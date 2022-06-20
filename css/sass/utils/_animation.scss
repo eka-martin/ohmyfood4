@@ -60,7 +60,16 @@
     &>.food {
         width: 250px;
         transition: width 600ms;
+
+        &>.food_1 p {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            max-width: 200px;
+        }
     }
+
+
 
     &>.box {
 

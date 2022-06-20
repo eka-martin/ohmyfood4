@@ -55,6 +55,7 @@
     box-shadow: $shadow;
     overflow: hidden;
 
+
     i {
 
         color: white;
@@ -89,10 +90,12 @@
     width: 325px;
     flex-shrink: 0;
 
+
     p {
         font-size: 14px;
         font-weight: 200;
         padding-top: 5px;
+
     }
 
     .price {
