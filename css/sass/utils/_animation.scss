@@ -6,11 +6,14 @@
     background-image: $gradient;
     -webkit-text-fill-color: transparent;
     cursor: pointer;
-    animation: 2s ease 0s infinite normal none running fontgradient;
-    -webkit-animation: fontgradient 2s ease infinite;
-    -moz-animation: fontgradient 2s ease infinite;
-    animation: fontgradient 2s ease infinite;
+    animation: 2s ease-in-out fontgradient;
+    -webkit-animation: fontgradient 2s ease-in-out;
+    -moz-animation: fontgradient 2s ease-in-out;
+
 }
+
+
+
 
 @-webkit-keyframes fontgradient {
     0% {
@@ -66,6 +69,16 @@
             white-space: nowrap;
             text-overflow: ellipsis;
             max-width: 200px;
+
+            &>.food_1 span {
+
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                max-width: 200px;
+            }
+
+
         }
     }
 
@@ -126,6 +139,5 @@
     &:hover i {
         color: $primColor;
     }
-
 
 }
