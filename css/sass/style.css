@@ -12,6 +12,10 @@
   -moz-animation: fontgradient 2s ease-in-out;
 }
 
+.btn-pink:hover .btn-pink__bg {
+  opacity: 0.3;
+}
+
 @-webkit-keyframes fontgradient {
   0% {
     background-position: 0% 92%;
@@ -402,6 +406,22 @@ header .logo img {
           box-shadow: 0 2px 4px 0 rgba(50, 50, 50, 0.2), 0 2px 10px 0 rgba(50, 50, 50, 0.2);
   width: 220px;
   text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-pink__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fface8;
+  border-radius: 36px;
+  opacity: 0;
+  z-index: -1;
+  -webkit-transition: opacity 250ms;
+  transition: opacity 250ms;
 }
 
 header {
@@ -566,17 +586,14 @@ header .logo img {
   z-index: 1;
 }
 
-.btn-pink:hover .btn-pink__bg {
-  opacity: 1;
-}
-
 .btn-pink__bg {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #e4d5f6;
+  background-color: #fface8;
+  border-radius: 36px;
   opacity: 0;
   z-index: -1;
   -webkit-transition: opacity 250ms;

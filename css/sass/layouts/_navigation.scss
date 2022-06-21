@@ -51,5 +51,20 @@ header {
 }
 
 .btn-pink {
-    @include btn-pink()
+    @include btn-pink();
+    position: relative;
+    z-index: 1;
+
+    &__bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: lighten($secondColor, 10%);
+        border-radius: 36px;
+        opacity: 0;
+        z-index: -1;
+        transition: opacity 250ms;
+    }
 }

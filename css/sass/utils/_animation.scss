@@ -12,7 +12,13 @@
 
 }
 
+.btn-pink:hover {
 
+    & .btn-pink__bg {
+        opacity: 0.3;
+    }
+
+}
 
 
 @-webkit-keyframes fontgradient {
