@@ -746,4 +746,28 @@ header .logo img {
 .foot .footer-text {
   margin-left: 20px;
 }
+
+@media (min-width: 769px) and (max-width: 991px) {
+  #wrapper {
+    width: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  #wrapper {
+    width: auto;
+  }
+  .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .resto_card {
+    width: 50%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
