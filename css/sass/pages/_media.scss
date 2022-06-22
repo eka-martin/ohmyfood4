@@ -1,22 +1,119 @@
-@media (min-width:769px) and (max-width:991px) {
-    #wrapper {
-        width: auto;
-    }
-}
+ @media (min-width:769px) and (max-width:991px) {
+     #wrapper {
+         width: auto;
+     }
 
-@media (min-width: 992px) {
-    #wrapper {
-        width: auto;
-    }
+     .list {
+         display: flex;
+         flex-direction: row;
+     }
 
-    .list {
-        display: flex;
-        flex-direction: row;
-    }
+     .resto_card {
+         width: 45%;
+     }
 
-    .resto_card {
-        width: 50%;
-    }
+     .row {
+         display: flex;
+         flex-direction: row;
+     }
+
+     .resto {
+         height: 700px;
+     }
+
+     .column {
+         margin-left: 35px;
+     }
+
+     .footer-text {
+         display: flex;
+         flex-direction: row;
+         justify-content: left;
+
+         div {
+             width: 50%;
+         }
+     }
+
+     .menu {
+         height: 800px;
+
+         &_row {
+             display: flex;
+             flex-direction: row;
+             justify-content: space-between;
+             flex-wrap: wrap;
+         }
+     }
+
+     .part {
+         width: 45%;
+
+     }
+
+     .food {
+         width: 380px;
+     }
+
+ }
+
+ @media (min-width:992px) {
+     #wrapper {
+         width: 992px;
+     }
 
 
-}
+
+
+     .list {
+         display: flex;
+         flex-direction: row;
+     }
+
+     .resto {
+         height: 400px;
+     }
+
+     .resto_card {
+         width: 23%;
+     }
+
+     .row {
+         display: flex;
+         flex-direction: row;
+     }
+
+     .column {
+         margin-left: 35px;
+     }
+
+     .footer-text {
+         display: flex;
+         flex-direction: row;
+         justify-content: left;
+
+         div {
+             width: 50%;
+         }
+     }
+
+     .menu {
+         height: 500px;
+
+         &_row {
+             display: flex;
+             flex-direction: row;
+             justify-content: space-between;
+         }
+     }
+
+     .part {
+         width: 31%;
+
+
+     }
+
+     .food {
+         width: 290px;
+     }
+ }
