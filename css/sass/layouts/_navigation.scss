@@ -29,7 +29,7 @@ header {
     background-color: $greyLight;
     @include flexCenter(column);
     height: 300px;
-    padding: 60px;
+    padding: 50px;
     margin-bottom: 40px;
 
     .heading {
@@ -66,5 +66,16 @@ header {
         opacity: 0;
         z-index: -1;
         transition: opacity 250ms;
+    }
+
+    &:hover {
+
+        & .btn-pink__bg {
+            opacity: 0.4;
+        }
+
+        box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.53),
+        0 4px 10px 0 rgba(0, 0, 0, 0.53);
+
     }
 }

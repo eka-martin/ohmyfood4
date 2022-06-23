@@ -7,6 +7,7 @@
     padding: 0px 20px;
     background-color: $greyLight;
 
+
     .part {
         margin-bottom: 30px;
     }
@@ -27,29 +28,13 @@
     }
 
     .bottom {
-        @include flexCenter(column);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }
 
-.btn-pink {
-    @include btn-pink();
-    position: relative;
-    z-index: 1;
-
-    &__bg {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: lighten($secondColor, 10%);
-        border-radius: 36px;
-        opacity: 0;
-        z-index: -1;
-        transition: opacity 250ms;
-    }
-
-}
 
 .heading_menu {
     border-bottom: solid 3px $tertColor;
