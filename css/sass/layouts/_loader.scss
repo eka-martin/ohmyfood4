@@ -1,4 +1,4 @@
-$num-bars: 5;
+$num-bars: 7;
 $anim-dur: 1500ms;
 
 
@@ -44,10 +44,18 @@ $anim-dur: 1500ms;
 }
 
 .load__bar--4 {
-    animation-delay: 800ms;
+    animation-delay: 400ms;
 }
 
 .load__bar--5 {
+    animation-delay: 600ms;
+}
+
+.load__bar--6 {
+    animation-delay: 800ms;
+}
+
+.load__bar--7 {
     animation-delay: 1000ms;
 }
 
@@ -63,21 +71,30 @@ $anim-dur: 1500ms;
     &__bar {
         background-image: $gradient;
         height: 100%;
-        width: 15px;
+        width: 13px;
 
         &--1,
-        &--5 {
+        &--7 {
             animation: bars_1 $anim-dur infinite backwards ease-in-out;
 
         }
 
+
         &--2,
-        &--4 {
+        &--6 {
             animation: bars_2 $anim-dur infinite backwards ease-in-out;
         }
 
-        &--3 {
+        &--3,
+        &--5 {
             animation: bars_3 $anim-dur infinite backwards ease-in-out;
+
+        }
+
+        &--4 {
+            animation: bars_5 $anim-dur infinite backwards ease-in-out, bars_4 $anim-dur infinite backwards ease-in-out;
+
+
         }
 
     }
@@ -92,7 +109,7 @@ $anim-dur: 1500ms;
     }
 
     100% {
-        transform: scaleX(2) scaleY(0.4);
+        transform: scaleX(1.5) scaleY(0.4);
 
     }
 
@@ -106,23 +123,24 @@ $anim-dur: 1500ms;
     }
 
     100% {
-        transform: scaleX(2) scaleY(0.8);
+        transform: scaleX(1.8) scaleY(0.8);
     }
 
 }
 
 @keyframes bars_3 {
-
     0% {
-        transform: scaleX(1.0);
-        transform-origin: 50% 50%;
+        transform: scaleX(1.0) scaleY(1.0);
 
     }
 
     100% {
-        transform: scaleX(2.0);
-        transform-origin: 50% 50%;
+        transform: scaleX(1.8) scaleY(0.7);
     }
+
+}
+
+@keyframes bars_4 {
 
     0% {
         transform: scaleY(1.0);
@@ -131,12 +149,25 @@ $anim-dur: 1500ms;
     }
 
 
-
     100% {
-        transform: scaleY(0.8);
+        transform: scaleY(0.6);
         transform-origin: 0% 100%;
     }
 
+}
+
+@keyframes bars_5 {
+
+    0% {
+        transform: scaleX(1.0);
+        transform-origin: 50% 50%;
+    }
+
+
+    100% {
+        transform: scaleX(2.0);
+        transform-origin: 50% 50%;
+    }
 
 }
 
