@@ -224,10 +224,8 @@ li {
   z-index: 1;
   -webkit-animation: fade;
           animation: fade;
-  -webkit-animation-duration: 0s;
-          animation-duration: 0s;
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -239,44 +237,6 @@ li {
   right: 0;
   top: 0;
   bottom: 0;
-}
-
-.load__bar--1 {
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
-}
-
-.load__bar--2 {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
-}
-
-.load__bar--3 {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
-}
-
-.load__bar--4 {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
-}
-
-.load__bar--5 {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
-}
-
-.load__bar--6 {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
-}
-
-.load__bar--7 {
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
-}
-
-.load {
   width: 150px;
   height: 120px;
   display: -webkit-box;
@@ -285,6 +245,8 @@ li {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-animation: bat 2s ease 0s infinite normal forwards;
+          animation: bat 2s ease 0s infinite normal forwards;
 }
 
 .load__bar {
@@ -295,23 +257,23 @@ li {
 }
 
 .load__bar--1, .load__bar--7 {
-  -webkit-animation: bars_1 1500ms infinite backwards ease-in-out;
-          animation: bars_1 1500ms infinite backwards ease-in-out;
+  -webkit-animation: bars_1 4000ms infinite backwards ease-in-out;
+          animation: bars_1 4000ms infinite backwards ease-in-out;
 }
 
 .load__bar--2, .load__bar--6 {
-  -webkit-animation: bars_2 1500ms infinite backwards ease-in-out;
-          animation: bars_2 1500ms infinite backwards ease-in-out;
+  -webkit-animation: bars_2 4000ms infinite backwards ease-in-out;
+          animation: bars_2 4000ms infinite backwards ease-in-out;
 }
 
 .load__bar--3, .load__bar--5 {
-  -webkit-animation: bars_3 1500ms infinite backwards ease-in-out;
-          animation: bars_3 1500ms infinite backwards ease-in-out;
+  -webkit-animation: bars_3 4000ms infinite backwards ease-in-out;
+          animation: bars_3 4000ms infinite backwards ease-in-out;
 }
 
 .load__bar--4 {
-  -webkit-animation: bars_5 1500ms infinite backwards ease-in-out, bars_4 1500ms infinite backwards ease-in-out;
-          animation: bars_5 1500ms infinite backwards ease-in-out, bars_4 1500ms infinite backwards ease-in-out;
+  -webkit-animation: bars_4 4000ms infinite backwards ease-in-out;
+          animation: bars_4 4000ms infinite backwards ease-in-out;
 }
 
 @-webkit-keyframes bars_1 {
@@ -320,8 +282,8 @@ li {
             transform: scaleX(1) scaleY(1);
   }
   100% {
-    -webkit-transform: scaleX(1.5) scaleY(0.4);
-            transform: scaleX(1.5) scaleY(0.4);
+    -webkit-transform: scaleX(1.6) scaleY(0.5);
+            transform: scaleX(1.6) scaleY(0.5);
   }
 }
 
@@ -331,8 +293,8 @@ li {
             transform: scaleX(1) scaleY(1);
   }
   100% {
-    -webkit-transform: scaleX(1.5) scaleY(0.4);
-            transform: scaleX(1.5) scaleY(0.4);
+    -webkit-transform: scaleX(1.6) scaleY(0.5);
+            transform: scaleX(1.6) scaleY(0.5);
   }
 }
 
@@ -362,10 +324,14 @@ li {
   0% {
     -webkit-transform: scaleX(1) scaleY(1);
             transform: scaleX(1) scaleY(1);
+    -webkit-transform-origin: 60% 70%;
+            transform-origin: 60% 70%;
   }
   100% {
     -webkit-transform: scaleX(1.8) scaleY(0.7);
             transform: scaleX(1.8) scaleY(0.7);
+    -webkit-transform-origin: 60% 70%;
+            transform-origin: 60% 70%;
   }
 }
 
@@ -373,70 +339,114 @@ li {
   0% {
     -webkit-transform: scaleX(1) scaleY(1);
             transform: scaleX(1) scaleY(1);
+    -webkit-transform-origin: 60% 70%;
+            transform-origin: 60% 70%;
   }
   100% {
     -webkit-transform: scaleX(1.8) scaleY(0.7);
             transform: scaleX(1.8) scaleY(0.7);
+    -webkit-transform-origin: 60% 70%;
+            transform-origin: 60% 70%;
   }
 }
 
 @-webkit-keyframes bars_4 {
   0% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    -webkit-transform-origin: 0% 100%;
-            transform-origin: 0% 100%;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
   }
   100% {
-    -webkit-transform: scaleY(0.6);
-            transform: scaleY(0.6);
-    -webkit-transform-origin: 0% 100%;
-            transform-origin: 0% 100%;
+    -webkit-transform: scale(1.9, 0.6);
+            transform: scale(1.9, 0.6);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
   }
 }
 
 @keyframes bars_4 {
   0% {
-    -webkit-transform: scaleY(1);
-            transform: scaleY(1);
-    -webkit-transform-origin: 0% 100%;
-            transform-origin: 0% 100%;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
   }
   100% {
-    -webkit-transform: scaleY(0.6);
-            transform: scaleY(0.6);
-    -webkit-transform-origin: 0% 100%;
-            transform-origin: 0% 100%;
+    -webkit-transform: scale(1.9, 0.6);
+            transform: scale(1.9, 0.6);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
   }
 }
 
-@-webkit-keyframes bars_5 {
+@-webkit-keyframes bat {
   0% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
   }
-  100% {
-    -webkit-transform: scaleX(2);
-            transform: scaleX(2);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+  10% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-transform: scale(0.89);
+            transform: scale(0.89);
+  }
+  17% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+  }
+  33% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+  }
+  45% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
-@keyframes bars_5 {
+@keyframes bat {
   0% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
   }
-  100% {
-    -webkit-transform: scaleX(2);
-            transform: scaleX(2);
-    -webkit-transform-origin: 50% 50%;
-            transform-origin: 50% 50%;
+  10% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-transform: scale(0.89);
+            transform: scale(0.89);
+  }
+  17% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+  }
+  33% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-transform: scale(0.85);
+            transform: scale(0.85);
+  }
+  45% {
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 
@@ -444,8 +454,14 @@ li {
   0% {
     opacity: 1;
   }
+  90% {
+    opacity: 0.95;
+    z-index: 1;
+  }
   100% {
     opacity: 0;
+    display: none;
+    z-index: -10;
   }
 }
 
@@ -453,8 +469,14 @@ li {
   0% {
     opacity: 1;
   }
+  90% {
+    opacity: 0.95;
+    z-index: 1;
+  }
   100% {
     opacity: 0;
+    display: none;
+    z-index: -10;
   }
 }
 

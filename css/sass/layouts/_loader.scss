@@ -1,5 +1,4 @@
-$num-bars: 7;
-$anim-dur: 1500ms;
+$anim-dur: 4000ms;
 
 
 .container {
@@ -12,8 +11,7 @@ $anim-dur: 1500ms;
     bottom: 0;
     z-index: 1;
     animation: fade;
-    animation-duration: 0s;
-    animation-delay: 4s;
+    animation-duration: 4s;
     animation-fill-mode: forwards;
 
 
@@ -26,47 +24,10 @@ $anim-dur: 1500ms;
     right: 0;
     top: 0;
     bottom: 0;
-
-}
-
-
-
-.load__bar--1 {
-    animation-delay: 1000ms;
-}
-
-.load__bar--2 {
-    animation-delay: 800ms;
-}
-
-.load__bar--3 {
-    animation-delay: 600ms;
-}
-
-.load__bar--4 {
-    animation-delay: 400ms;
-}
-
-.load__bar--5 {
-    animation-delay: 600ms;
-}
-
-.load__bar--6 {
-    animation-delay: 800ms;
-}
-
-.load__bar--7 {
-    animation-delay: 1000ms;
-}
-
-
-
-.load {
     width: 150px;
     height: 120px;
     display: flex;
     justify-content: space-evenly;
-
 
     &__bar {
         background-image: $gradient;
@@ -76,9 +37,7 @@ $anim-dur: 1500ms;
         &--1,
         &--7 {
             animation: bars_1 $anim-dur infinite backwards ease-in-out;
-
         }
-
 
         &--2,
         &--6 {
@@ -88,16 +47,14 @@ $anim-dur: 1500ms;
         &--3,
         &--5 {
             animation: bars_3 $anim-dur infinite backwards ease-in-out;
-
         }
 
         &--4 {
-            animation: bars_5 $anim-dur infinite backwards ease-in-out, bars_4 $anim-dur infinite backwards ease-in-out;
-
-
+            animation: bars_4 $anim-dur infinite backwards ease-in-out;
         }
-
     }
+
+    animation: bat 2s ease 0s infinite normal forwards;
 }
 
 
@@ -105,21 +62,18 @@ $anim-dur: 1500ms;
     0% {
         transform: scaleX(1.0) scaleY(1.0);
 
-
     }
 
     100% {
-        transform: scaleX(1.5) scaleY(0.4);
+        transform: scaleX(1.6) scaleY(0.5);
 
     }
-
 
 }
 
 @keyframes bars_2 {
     0% {
         transform: scaleX(1.0) scaleY(1.0);
-
     }
 
     100% {
@@ -131,44 +85,58 @@ $anim-dur: 1500ms;
 @keyframes bars_3 {
     0% {
         transform: scaleX(1.0) scaleY(1.0);
-
+        transform-origin: 60% 70%;
     }
 
     100% {
         transform: scaleX(1.8) scaleY(0.7);
+        transform-origin: 60% 70%;
     }
 
 }
+
 
 @keyframes bars_4 {
 
     0% {
-        transform: scaleY(1.0);
-        transform-origin: 0% 100%;
-
+        transform: scale(1.0, 1.0);
+        transform-origin: 50% 100%;
     }
 
 
     100% {
-        transform: scaleY(0.6);
-        transform-origin: 0% 100%;
+        transform: scale(1.9, 0.6);
+        transform-origin: 50% 100%;
     }
 
 }
 
-@keyframes bars_5 {
-
+@keyframes bat {
     0% {
-        transform: scaleX(1.0);
-        transform-origin: 50% 50%;
+        animation-timing-function: ease-out;
+        transform: scale(1);
+        transform-origin: center center;
     }
 
-
-    100% {
-        transform: scaleX(2.0);
-        transform-origin: 50% 50%;
+    10% {
+        animation-timing-function: ease-in;
+        transform: scale(0.89);
     }
 
+    17% {
+        animation-timing-function: ease-out;
+        transform: scale(0.98);
+    }
+
+    33% {
+        animation-timing-function: ease-in;
+        transform: scale(0.85);
+    }
+
+    45% {
+        animation-timing-function: ease-out;
+        transform: scale(1);
+    }
 }
 
 @keyframes fade {
@@ -176,7 +144,14 @@ $anim-dur: 1500ms;
         opacity: 1;
     }
 
+    90% {
+        opacity: 0.95;
+        z-index: 1;
+    }
+
     100% {
         opacity: 0;
+        display: none;
+        z-index: -10;
     }
 }
