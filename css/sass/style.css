@@ -557,6 +557,7 @@ header .logo img {
   justify-content: space-between;
   align-items: flex-end;
   width: 480px;
+  flex-shrink: 0.5;
 }
 .food .name1 {
   white-space: nowrap;
