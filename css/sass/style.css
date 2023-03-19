@@ -557,7 +557,7 @@ header .logo img {
   justify-content: space-between;
   align-items: flex-end;
   width: 480px;
-  flex-shrink: 0.5;
+  flex-shrink: 0.9;
 }
 .food .name1 {
   white-space: nowrap;
@@ -656,7 +656,7 @@ header .logo img {
     width: 45%;
   }
   .food {
-    width: 1000px;
+    width: 700px;
   }
 }
 @media (min-width: 992px) {
@@ -700,6 +700,6 @@ header .logo img {
     width: 32%;
   }
   .food {
-    width: 1800px;
+    width: 700px;
   }
 }/*# sourceMappingURL=style.css.map */
